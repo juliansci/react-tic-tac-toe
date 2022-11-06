@@ -1,9 +1,11 @@
 # React-tac-toe
 
 ## Build something like this!
+
 ![Tic-tac-toe Game](https://github.com/grain-team/tic-tac-toe/blob/master/objective.png?raw=true)
 
 # Extra points
+
 - Use TypeScript
 - Make it look nice
 - Add modern tooling of your choice (linter, formatter, etc)
@@ -13,6 +15,10 @@
 ## Available Scripts
 
 In the project directory, you can run:
+
+### Online Demo
+
+[https://react-tic-tac-toe-julianscialabba.vercel.app/](https://react-tic-tac-toe-julianscialabba.vercel.app/)
 
 ### `yarn start`
 

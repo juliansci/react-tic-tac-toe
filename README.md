@@ -16,7 +16,7 @@
 
 In the project directory, you can run:
 
-### Online Demo
+## Online Demo
 
 [https://react-tic-tac-toe-julianscialabba.vercel.app/](https://react-tic-tac-toe-julianscialabba.vercel.app/)
 

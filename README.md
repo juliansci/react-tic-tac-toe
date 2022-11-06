@@ -12,13 +12,13 @@
 - Save game data to LocalStorage
 - Add a controller to change the grid size (3x3, 4x4, 5x5 or 6x6)
 
-## Available Scripts
-
-In the project directory, you can run:
-
 ## Online Demo
 
 [https://react-tic-tac-toe-julianscialabba.vercel.app/](https://react-tic-tac-toe-julianscialabba.vercel.app/)
+
+## Available Scripts
+
+In the project directory, you can run:
 
 ### `yarn start`
 

@@ -1,6 +1,6 @@
 import { Flex, GridItem } from '@chakra-ui/react';
 import { BoardCellValue } from '../../models';
-import { FaRegCircle, FaTimes } from 'react-icons/fa';
+import PlayerIcon from '../PlayerIcon';
 
 type BoardCellProps = {
   value: BoardCellValue;
@@ -9,16 +9,15 @@ type BoardCellProps = {
 };
 
 const BoardCell = ({ value, position, handleCellClick }: BoardCellProps) => {
-  const renderValue =
-    value === 'None' ? null : value === 'X' ? <FaTimes /> : <FaRegCircle />;
   const isSelected = value !== 'None';
 
   return (
     <GridItem
       w={{ base: 12, md: 20 }}
       h={{ base: 12, md: 20 }}
-      borderColor="white"
-      border="1px"
+      borderWidth="3px"
+      borderColor={'teal.400'}
+      bg="#1A202C"
       cursor={isSelected ? 'default' : 'pointer'}
     >
       <Flex
@@ -26,11 +25,10 @@ const BoardCell = ({ value, position, handleCellClick }: BoardCellProps) => {
         alignItems="center"
         h="full"
         w="full"
-        fontSize={{ base: '2xl', md: '4xl' }}
         fontWeight="bold"
         onClick={() => handleCellClick(position)}
       >
-        {renderValue}
+        <PlayerIcon player={value} />
       </Flex>
     </GridItem>
   );

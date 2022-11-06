@@ -44,12 +44,9 @@ export const checkWinner = (
   // Check Vertical
   let columnsSet = new Set();
   for (const boardRows of boardDataMatrix) {
-    console.log({ boardRows, matrixColumnIndex });
-
     columnsSet.add(boardRows[matrixColumnIndex]);
   }
   const winnerOnVertical = columnsSet.size === 1;
-  console.log({ winnerOnVertical, columnsSet });
   if (winnerOnVertical) {
     return lastPlayer;
   }

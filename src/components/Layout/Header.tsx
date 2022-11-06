@@ -5,6 +5,7 @@ import {
   useColorMode,
   Center,
   useColorModeValue,
+  Image,
   Heading,
 } from '@chakra-ui/react';
 import { HiSun, HiMoon } from 'react-icons/hi';
@@ -19,7 +20,8 @@ const Header = () => {
 
   return (
     <HStack h="16" w="full" py={8} justifyContent="space-between">
-      <Heading>Tic Tac Toe Game</Heading>
+      <Image src="/images/tic-tac-toe-logo.png" w={14} />
+      <Heading>Tic Tac Toe</Heading>
       <Tooltip label={themeTooltipText} placement="bottom">
         <IconButton
           icon={<Center>{themeIcon}</Center>}

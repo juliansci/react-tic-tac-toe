@@ -44,6 +44,20 @@ const Board = () => {
           ...gameData,
           winner,
         });
+      } else {
+        if (!gameData.draw) {
+          const totalQuantityItemsBoard =
+            gameData.boardSize * gameData.boardSize;
+          const allSelected =
+            boardData.filter((cellData) => cellData !== 'None').length ===
+            totalQuantityItemsBoard;
+          if (allSelected) {
+            setGameData({
+              ...gameData,
+              draw: true,
+            });
+          }
+        }
       }
     }
   }, [boardData, gameData, setGameData]);

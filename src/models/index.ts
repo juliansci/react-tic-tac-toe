@@ -7,4 +7,5 @@ export type Game = {
   boardSize: number;
   lastCellSelection?: number;
   winner?: Player;
+  draw?: boolean;
 };

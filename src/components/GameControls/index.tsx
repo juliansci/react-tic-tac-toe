@@ -31,7 +31,6 @@ const GameControls = () => {
     });
     setBoardData(generateEmptyBoard(newBoardSize));
   };
-
   return (
     <Stack>
       <FormControl>

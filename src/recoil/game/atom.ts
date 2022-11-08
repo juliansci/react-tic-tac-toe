@@ -12,6 +12,8 @@ const gameAtom = atom<Game>({
   default: {
     turn: DEFAULT_FIRST_TURN_VALUE,
     boardSize: DEFAULT_BOARD_SIZE,
+    draw: false,
+    winner: undefined,
   },
   effects: [localStorageEffect<Game>(GAME_STORAGE_KEY)],
 });

@@ -12,6 +12,10 @@ const GameInformation = () => {
           <Text fontWeight="bold">Winner</Text>
           <PlayerIcon player={gameData.winner} />
         </>
+      ) : gameData.draw ? (
+        <>
+          <Text fontWeight="bold">Draw</Text>
+        </>
       ) : (
         <>
           <Text fontWeight="bold">Turn</Text>
